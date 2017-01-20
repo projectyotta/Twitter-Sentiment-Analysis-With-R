@@ -1,0 +1,674 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0001, minimum-scale=1.0001"/>
+	<title>dataminingwithr</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://dataminingwithr.wordpress.com/xmlrpc.php">
+
+	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//s1.wp.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="dataminingwithr &raquo; Feed" href="https://dataminingwithr.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="dataminingwithr &raquo; Comments Feed" href="https://dataminingwithr.wordpress.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="dataminingwithr &raquo; About Comments Feed" href="https://dataminingwithr.wordpress.com/about/feed/" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s1.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1473172720h&ver=4.6.1-RC1-38499"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='all-css-0-1' href='https://s1.wp.com/_static/??-eJyFj90KwjAMhV/IGqZT3IX4LFsNrlvThqVl+PamDgVF5k3Iz/k4JzCzsTEkDAkoG/b55oLAzDaSEXIe71/T1ops4Dfm3YgCAyZu7Wie05rcxgl1T9ymoiC8uhY9ksrWMOLjiyptr16rNkv8ruMJRYxWcplM6tXoTzwqUZY/QIWfmwV1EGJySsu7KYcLnav60OzqqtmfhgcvXIXW' type='text/css' media='all' />
+<link rel='stylesheet' id='eighties-header-css'  href='https://fonts.googleapis.com/css?family=Righteous' type='text/css' media='all' />
+<link rel='stylesheet' id='eighties-headings-css'  href='https://fonts.googleapis.com/css?family=Varela+Round' type='text/css' media='all' />
+<link rel='stylesheet' id='eighties-body-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C700italic%2C400%2C700' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-6-1' href='https://s1.wp.com/_static/??-eJyFi8EKwjAQRH/IuIht6UX8ljRs05VNNnQ3FP/e6KlF0Mswj5kHW3FBsmE2sAUTKpQ6AVJcjBrMbWvpP8X5DVUSnoPqCf6Yak/+fqbqCtdIWSGiOJbgjSQfwM3saf2lrjixxFYjtNcO39I93S7d2A1DP177xwuGQFN6' type='text/css' media='all' />
+<link rel='stylesheet' id='print-css-7-1' href='https://s0.wp.com/wp-content/mu-plugins/global-print/global-print.css?m=1465851035h' type='text/css' media='print' />
+<link rel='stylesheet' id='all-css-8-1' href='https://s2.wp.com/_static/??-eJx9i0EKQjEMBS9kjWLhdyOeJb/UNpImpcnH64sLEVFcvXkwA/cRsooXcehbGLxVEgPMTiorzjfts9kOfutDzcOVkSZYw0lSX/uvMs2EHFirfp6vyFvpxaBFqKwr8lO49PMxprgsKZ0OtwfFp0m+' type='text/css' media='all' />
+<script type='text/javascript' src='https://s0.wp.com/_static/??-eJyFzt0KwjAMBeAXsiv+Tb0Qn6WrcaQuaW1Shz69HeiFMBQCgZyPQ+yYDLIfyhnEhjq3AvnxXk2Qhf0FDGGfnUJDyB/sIyuwTpZihwOYIpBdX2+16BJnXIqiBCIVzaTfLyHfEca/LIAm568mg+Bzaj3Rcblp2+1qfdjtwws0V1vd'></script>
+<link rel='stylesheet' id='all-css-0-2' href='https://s1.wp.com/wp-content/mu-plugins/highlander-comments/style.css?m=1377793621h' type='text/css' media='all' />
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='https://s1.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563h&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://dataminingwithr.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress.com" />
+<link rel="canonical" href="https://dataminingwithr.wordpress.com/" />
+<link rel='shortlink' href='http://wp.me/P7nd6N-1' />
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=https%3A%2F%2Fdataminingwithr.wordpress.com%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=https%3A%2F%2Fdataminingwithr.wordpress.com%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="dataminingwithr" />
+<meta property="og:url" content="https://dataminingwithr.wordpress.com/" />
+<meta property="og:site_name" content="dataminingwithr" />
+<meta property="og:image" content="https://s0.wp.com/i/blank.jpg" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:site" content="@wordpressdotcom" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Visit the post for more." />
+<meta property="fb:app_id" content="249643311490" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<link rel="shortcut icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48" />
+<link rel="icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48" />
+<link rel="apple-touch-icon-precomposed" href="https://s0.wp.com/i/webclip.png" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://dataminingwithr.wordpress.com/osd.xml" title="dataminingwithr" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+				<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="application-name" content="dataminingwithr" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-task" content="name=Subscribe;action-uri=https://dataminingwithr.wordpress.com/feed/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="title" content="About | dataminingwithr on WordPress.com" />
+<meta name="description" content="I would like to thank all those who have contributed to the completion of this project report and helped me with valuable suggestions for improvement. I am extremely grateful to Prof. Dr. P.V. Nageswara Rao, HOD, GIT, Department of Computer Science Engineering for giving me this opportunity and allowing me to undergo my final year&hellip;" />
+	<style type="text/css">
+			.site-title a,
+		.site-description {
+			color: #ffffff;
+		}
+	
+			#masthead {
+			background-image: url('https://s0.wp.com/wp-content/themes/pub/eighties/images/header-default.jpg');
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	
+				
+	</style>
+	<style type="text/css" id="syntaxhighlighteranchor"></style>
+</head>
+
+<body class="home page page-id-1 page-template-default mp6 customizer-styles-applied widgets-hidden highlander-enabled highlander-light">
+	<div id="page" class="hfeed site">
+		<div class="site-toggles">
+			<a href="#" class="main-navigation-toggle"><i class="fa fa-bars"></i></a>
+							<a href class="widget-area-toggle"><i class="fa fa-align-right"></i></a>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<a href="#" class="main-navigation-toggle"><i class="fa fa-times"></i></a>
+			<h4 class="main-navigation-title">Menu</h4>
+			<div class="menu"><ul><li class="current_page_item"><a href="https://dataminingwithr.wordpress.com/">Home</a></li><li class="page_item page-item-7"><a href="https://dataminingwithr.wordpress.com/getting-the-data/">Getting the data</a></li><li class="page_item page-item-9"><a href="https://dataminingwithr.wordpress.com/location-data/">location data</a></li><li class="page_item page-item-4"><a href="https://dataminingwithr.wordpress.com/sentiment-analysis-page/">Sentiment analysis page</a></li></ul></div>
+			<div class="menu-item menu-item-search">
+				<a href="#"><i class="fa fa-search"></i></a>
+				
+<form role="search" method="get" class="search-form" action="https://dataminingwithr.wordpress.com/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s">
+	</label>
+</form>
+			</div>
+					</nav><!-- #site-navigation -->
+
+					<header id="masthead" class="site-header" role="banner">
+				<a class="skip-link screen-reader-text" href="#content" data-backstretch="https://s0.wp.com/wp-content/themes/pub/eighties/images/header-default.jpg">Skip to content</a>
+				<div class="site-branding">
+					<h1 class="site-title"><a href="https://dataminingwithr.wordpress.com/" rel="home">dataminingwithr</a></h1>
+					<h2 class="site-description"></h2>
+				</div>
+									<a href="https://dataminingwithr.wordpress.com/" rel="home" class="home-link"></a>
+							</header><!-- #masthead -->
+		
+		<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-1" class="post-1 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">About</h1>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>I would like to thank all those who have contributed to the completion of this project report and helped me with valuable suggestions for improvement. I am extremely grateful to Prof. Dr. P.V. Nageswara Rao, HOD, GIT, Department of Computer Science Engineering for giving me this opportunity and allowing me to undergo my final year project. I would like to thank Dr. Y. Radhika and Dr. Murali Krishna for their help, encouragement and support throughout the project and providing us with required resources and information.</p>
+<p>We could achieve this project with the continuous encouragement and support given by the officials who assigned the project and the management and staff of GITAM University,Vizag. I consider it as my privilege to express my gratitude and respect to all officials who guided, inspired and helped to complete the project work in time.</p>
+<p>&nbsp;</p>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1" class="share-twitter sd-button share-icon no-text" href="https://dataminingwithr.wordpress.com/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1" class="share-facebook sd-button share-icon no-text" href="https://dataminingwithr.wordpress.com/?share=facebook" target="_blank" title="Share on Facebook"><span></span><span class="sharing-screen-reader-text">Share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1" class="share-google-plus-1 sd-button share-icon no-text" href="https://dataminingwithr.wordpress.com/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-email"><a rel="nofollow" data-shared="" class="share-email sd-button share-icon no-text" href="https://dataminingwithr.wordpress.com/?share=email" target="_blank" title="Click to email"><span></span><span class="sharing-screen-reader-text">Click to email (Opens in new window)</span></a></li><li class="share-print"><a rel="nofollow" data-shared="" class="share-print sd-button share-icon no-text" href="https://dataminingwithr.wordpress.com/#print" target="_blank" title="Click to print"><span></span><span class="sharing-screen-reader-text">Click to print (Opens in new window)</span></a></li><li class="share-linkedin"><a rel="nofollow" data-shared="sharing-linkedin-1" class="share-linkedin sd-button share-icon no-text" href="https://dataminingwithr.wordpress.com/?share=linkedin" target="_blank" title="Click to share on LinkedIn"><span></span><span class="sharing-screen-reader-text">Click to share on LinkedIn (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://dataminingwithr.wordpress.com/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-tumblr"><a rel="nofollow" data-shared="" class="share-tumblr sd-button share-icon no-text" href="https://dataminingwithr.wordpress.com/?share=tumblr" target="_blank" title="Click to share on Tumblr"><span></span><span class="sharing-screen-reader-text">Click to share on Tumblr (Opens in new window)</span></a></li><li class="share-pinterest"><a rel="nofollow" data-shared="sharing-pinterest-1" class="share-pinterest sd-button share-icon no-text" href="https://dataminingwithr.wordpress.com/?share=pinterest" target="_blank" title="Click to share on Pinterest"><span></span><span class="sharing-screen-reader-text">Click to share on Pinterest (Opens in new window)</span></a></li><li class="share-pocket"><a rel="nofollow" data-shared="" class="share-pocket sd-button share-icon no-text" href="https://dataminingwithr.wordpress.com/?share=pocket" target="_blank" title="Click to share on Pocket"><span></span><span class="sharing-screen-reader-text">Click to share on Pocket (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-108966289-1-588218191a4a5' data-src='//widgets.wp.com/likes/#blog_id=108966289&amp;post_id=1&amp;origin=dataminingwithr.wordpress.com&amp;obj_id=108966289-1-588218191a4a5' data-name='like-post-frame-108966289-1-588218191a4a5'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div></div>					</div><!-- .entry-content -->
+</article><!-- #post-## -->
+
+				<div id="comments" class="discussion">
+
+	
+	
+					<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://dataminingwithr.wordpress.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+					<input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="7359fa9b2b" /><input type="hidden" name="_wp_http_referer" value="/" />
+<input type="hidden" name="hc_post_as" id="hc_post_as" value="guest" />
+
+<div class="comment-form-field comment-textarea">
+	<label for="comment">Enter your comment here...</label>
+	<div id="comment-form-comment"><textarea id="comment" name="comment" title="Enter your comment here..."></textarea></div>
+</div>
+
+<div id="comment-form-identity">
+
+	<div id="comment-form-nascar">
+		<p>Fill in your details below or click an icon to log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="#comment-form-guest" id="postas-guest" title="Guest">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:WordPress.com" id="postas-wordpress" title="WordPress.com">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Twitter" id="postas-twitter" title="Twitter">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Facebook" id="postas-facebook" title="Facebook">
+					<span></span>
+				</a>
+			</li>
+			<li>
+			<iframe id="googleplus-sign-in" name="googleplus-sign-in" src="https://public-api.wordpress.com/connect/?googleplus-sign-in=https%3A%2F%2Fdataminingwithr.wordpress.com" width="24" height="24" scrolling="no" allowtransparency="true" seamless="seamless" frameborder="0"></iframe>
+			</li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank">				<img src="https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Gravatar" width="25" class="no-grav" />
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Email <span class="required">(required)</span> <span class="nopublish">(Address never made public)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Name <span class="required">(required)</span></label>
+					<div class="comment-form-input"><input id="author" name="author" type="text" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Website</label>
+					<div class="comment-form-input"><input id="url" name="url" type="url" value="" /></div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="WordPress.com Logo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="" />
+				<p class="comment-form-posting-as pa-wordpress"><strong></strong> You are commenting using your WordPress.com account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'wordpress' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Twitter picture" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="" />
+				<p class="comment-form-posting-as pa-twitter"><strong></strong> You are commenting using your Twitter account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'twitter' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Facebook photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="" />
+				<p class="comment-form-posting-as pa-facebook"><strong></strong> You are commenting using your Facebook account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'facebook' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Google+ photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="" />
+				<p class="comment-form-posting-as pa-googleplus"><strong></strong> You are commenting using your Google+ account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'googleplus' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();">Cancel</a></div>
+		<p>Connecting to %s</p>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+}
+jQuery(document).ready( highlander_expando_javascript );
+</script>
+
+<div id="comment-form-subscribe">
+	<p class="comment-subscription-form"><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;"/> <label class="subscribe-label" id="subscribe-label" for="subscribe" style="display: inline;">Notify me of new comments via email.</label></p></div>
+
+
+
+
+<p class="form-submit"><input name="submit" type="submit" id="comment-submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='1' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="600b7904c0" /></p>
+<input type="hidden" name="genseq" value="1484920857" />
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="194"/></p>				</form>
+					</div><!-- #respond -->
+		<div style="clear: both"></div></div>
+
+			
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+	<div id="secondary" class="widget-area" role="complementary">
+		<a href class="widget-area-toggle"><i class="fa fa-times"></i></a>
+		<div class="widgets-wrapper">
+			<aside id="search-2" class="widget widget_search">
+<form role="search" method="get" class="search-form" action="https://dataminingwithr.wordpress.com/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s">
+	</label>
+</form>
+</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h4 class="widget-title">Recent Comments</h4></aside><aside id="archives-2" class="widget widget_archive"><h4 class="widget-title">Archives</h4>		<ul>
+				</ul>
+		</aside><aside id="categories-2" class="widget widget_categories"><h4 class="widget-title">Categories</h4>		<ul>
+<li class="cat-item-none">No categories</li>		</ul>
+</aside>		</div>
+	</div><!-- #secondary -->
+
+	</div><!-- #content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+			<div id="site-supplementary" class="widget-area column-wrapper" role="complementary">
+			<div class="widget-area-content column">
+			<aside id="search-3" class="widget widget_search">
+<form role="search" method="get" class="search-form" action="https://dataminingwithr.wordpress.com/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s">
+	</label>
+</form>
+</aside><aside id="recent-comments-3" class="widget widget_recent_comments"><h4 class="widget-title">Recent Comments</h4></aside><aside id="archives-3" class="widget widget_archive"><h4 class="widget-title">Archives</h4>		<ul>
+				</ul>
+		</aside><aside id="categories-3" class="widget widget_categories"><h4 class="widget-title">Categories</h4>		<ul>
+<li class="cat-item-none">No categories</li>		</ul>
+</aside>		</div><!-- .widget-area-content -->
+				</div>
+
+		<div class="site-info">
+			<a href="https://wordpress.com/?ref=footer_blog">Blog at WordPress.com.</a>
+			
+					</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<!--  -->
+<script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201703y'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s1.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781h'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	</div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"https:\/\/dataminingwithr.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/dataminingwithr.wordpress.com\/wp-login.php?action=logout&_wpnonce=0ebb991ef3","homeURL":"https:\/\/dataminingwithr.wordpress.com\/","postID":"1","gravDefault":"identicon","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"0","userIsLoggedIn":"","isJetpack":"0","text_direction":"ltr"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??/wp-content/js/jquery/jquery.autoresize.js,/wp-content/mu-plugins/highlander-comments/script.js?m=1479964158j'></script>
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/dataminingwithr.wordpress.com\/":1};
+	</script>
+		<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-google-plus-1' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomgoogle-plus-1', 'menubar=1,resizable=1,width=480,height=550' );
+				return false;
+			});
+		});
+		</script>
+			<div id="sharing_email" style="display: none;">
+		<form action="/" method="post">
+			<label for="target_email">Send to Email Address</label>
+			<input type="email" name="target_email" id="target_email" value="" />
+
+			
+				<label for="source_name">Your Name</label>
+				<input type="text" name="source_name" id="source_name" value="" />
+
+				<label for="source_email">Your Email Address</label>
+				<input type="email" name="source_email" id="source_email" value="" />
+
+						<input type="text" id="jetpack-source_f_name" name="source_f_name" class="input" value="" size="25" autocomplete="off" />
+			<script> document.getElementById('jetpack-source_f_name').value = ''; </script>
+			<div class="recaptcha" id="sharing_recaptcha"></div><input type="hidden" name="recaptcha_public_key" id="recaptcha_public_key" value="6LcYW8MSAAAAADBAuEH9yaPcF7lWh11Iq62ZKtoo" />
+			<img style="float: right; display: none" class="loading" src="https://s2.wp.com/wp-content/mu-plugins/post-flair/sharing/images/loading.gif" alt="loading" width="16" height="16" />
+			<input type="submit" value="Send Email" class="sharing_send" />
+			<a rel="nofollow" href="#cancel" class="sharing_cancel">Cancel</a>
+
+			<div class="errors errors-1" style="display: none;">
+				Post was not sent - check your email addresses!			</div>
+
+			<div class="errors errors-2" style="display: none;">
+				Email check failed, please try again			</div>
+
+			<div class="errors errors-3" style="display: none;">
+				Sorry, your blog cannot share posts by email.			</div>
+		</form>
+	</div>
+		<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-linkedin' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomlinkedin', 'menubar=1,resizable=1,width=580,height=450' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-tumblr' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomtumblr', 'menubar=1,resizable=1,width=450,height=450' );
+				return false;
+			});
+		});
+		</script>
+							<script type="text/javascript">
+				jQuery(document).on('ready', function(){
+					jQuery('body').on('click', 'a.share-pinterest', function(e){
+						e.preventDefault();
+						// Load Pinterest Bookmarklet code
+						var s = document.createElement("script");
+						s.type = "text/javascript";
+						s.src = window.location.protocol + "//assets.pinterest.com/js/pinmarklet.js?r=" + ( Math.random() * 99999999 );
+						var x = document.getElementsByTagName("script")[0];
+						x.parentNode.insertBefore(s, x);
+						// Trigger Stats
+						var s = document.createElement("script");
+						s.type = "text/javascript";
+						s.src = this + ( this.toString().indexOf( '?' ) ? '&' : '?' ) + 'js_only=1';
+						var x = document.getElementsByTagName("script")[0];
+						x.parentNode.insertBefore(s, x);
+					});
+				});
+			</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-pocket' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcompocket', 'menubar=1,resizable=1,width=450,height=450' );
+				return false;
+			});
+		});
+		</script>
+		<script type='text/javascript' src='https://s1.wp.com/wp-content/mu-plugins/akismet-3.0/_inc/form.js?m=1404442431h'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var comment_like_text = {"loading":"Loading..."};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var actionbardata = {"siteID":"108966289","siteName":"dataminingwithr","siteURL":"http:\/\/dataminingwithr.wordpress.com","icon":"<img alt='' src='https:\/\/s1.wp.com\/i\/logo\/wpcom-gray-white.png' class='avatar avatar-50' height='50' width='50' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"pub\/eighties","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/dataminingwithr.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fdataminingwithr.wordpress.com%2F","themeURL":"https:\/\/wordpress.com\/themes\/eighties\/","xhrURL":"https:\/\/dataminingwithr.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"b501c57d22","isSingular":"1","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"cbde595b93\" \/>","referer":"https:\/\/dataminingwithr.wordpress.com\/","canFollow":"1","statusMessage":"","customizeLink":"https:\/\/dataminingwithr.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Fdataminingwithr.wordpress.com%2F","postID":"1","shortlink":"http:\/\/wp.me\/P7nd6N-1","canEditPost":"","editLink":"https:\/\/wordpress.com\/page\/dataminingwithr.wordpress.com\/1","statsLink":"https:\/\/wordpress.com\/stats\/post\/1\/dataminingwithr.wordpress.com","i18n":{"view":"View site","follow":"Follow","following":"Following","edit":"Edit","login":"Log in","signup":"Sign up","customize":"Customize","report":"Report this content","themeInfo":"Get theme: Eighties","shortlink":"Copy shortlink","copied":"Copied","followedText":"New posts from this site will now appear in your <a href=\"https:\/\/wordpress.com\/\">Reader<\/a>","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","editFollows":"Manage sites I follow","editSubs":"Manage subscriptions","viewReader":"View site in the Reader","subscribe":"Sign me up","enterEmail":"Enter your email address","followers":"","alreadyUser":"Already have a WordPress.com account? <a href=\"https:\/\/dataminingwithr.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fdataminingwithr.wordpress.com%2F\">Log in now.<\/a>","stats":"Stats"}};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??-eJyVkM1uwjAQhF8Is1QgkUvFszj2Jt7Ef921oX37OkJEpYcITh6N5xuNFm5ZmRQLxgKTgMUrGczf+0l28OcrVJV9HSkKeJpR4KtiRaej9cgbYZNCaJa6Q9NC9yA3yvgO9GT8B4vD0GK59oA0ukJ3ptdmlsJYjHuReOgX4zJTbovirIZkqqiB1qtRNL7a5+2M2f/sA8U31yiH2m7eWNvWqnrNELQU5KZUuiIzLRNWb6vBFEpxaVjVRjonKWrwmhjEaaY4Pt4GXcLnx6k7nc9ddzxMv+J44vw='></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>	<script type="text/javascript">
+	var skimlinks_pub_id = "725X584219"
+	var skimlinks_sitename = "dataminingwithr.wordpress.com";
+	</script>
+	<script type="text/javascript" defer src="https://s.skimresources.com/js/725X1342.skimlinks.js"></script>		<iframe src='https://widgets.wp.com/likes/master.html?ver=20160429#ver=20160429' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+		<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+		<script>
+			var _comscore = _comscore || [];
+			_comscore.push({
+				c1: "2",
+				c2: "7518284"
+			});
+			(function() {
+				var s = document.createElement("script"),
+					el = document.getElementsByTagName("script")[0];
+				s.defer = true;
+				s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+				el.parentNode.insertBefore(s, el);
+			})();
+		</script>
+		<noscript>
+			<p class="robots-nocontent"><img src="https://sb.scorecardresearch.com/p?c1=2&c2=7518284&c3=&c4=&c5=&c6=&c15=&cv=2.0&cj=1" alt="" style="display:none;" width="1" height="1" /></p>
+		</noscript><script src="//stats.wp.com/w.js?55" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'108966289','blog_tz':'0','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'108966289','v':'wpcom','tz':'0','user_id':'0','post':'1','subd':'dataminingwithr'}]);
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1LVmwrVi5vQS5fVFtfdHBbPyw1VXIrU3hWLHhzVndTdktBX0ddJnpXRjVaOTd6fj1YMX4ydzR6MmRCYnxkNmd4M2M1UjVCeTFaYTdzLzR5VTB3dWZLL1ZyJnEzNl0uW29GRW5EbV8ud2JFRlFrczY/XWVfaUwxeUZEdzZ6MTFfbFRWcnhSW09KQzA2eHlZSm1pb1k1Lz9Ublp1ZlhtS3ElZHlmckdoXWVVdG09MlgvPy1yS2JQUVBmUXFbPTVSLXUwMV10VTFTJVl0U3dlQy1oYT0vNk09LDI0bmJEM20tMk5LZ3xWRyV1UTFSaUVdR2NRalJ4RWJ1L3VTZHFuckE='}]);
+_stq.push([ 'clickTrackerInit', '108966289', '1' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+</body>
+</html>
